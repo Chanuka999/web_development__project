@@ -200,7 +200,7 @@ section{
     padding: 0 8px;
 }
 
-.btn readmore{
+.btn-readmore{
     padding: 8px 24px;
     border: 3px solid black;
     transition: 0.4s;
@@ -211,20 +211,149 @@ section{
     background: white;
 }
 
-.btn readmore{
+.btn-readmore:hover{
     background: red;
     text-decoration: none;
     padding: 8px 64px 8px 24px;
+    color: rgb(5, 4, 4);
+}
+
+footer{
+    background: black;
+    padding: 8px;
+    color: #ccc;
+    display: flex;
+}
+footer a{
     color: white;
 }
+
+footer #left-footer{
+    flex: 1;
+    border-right: 1px solid red;
+    padding-left: 32px;
+}
+
+footer #left-footer ul{
+    padding: 0;
+    list-style: none;
+    line-height: 1.5;
+}
+
+footer #right-footer{
+    flex:2;
+    padding: 8px;
+    text-align: center;
+}
+
+footer #social-media-footer a .fa-facebook,
+footer #social-media-footer a .fa-youtube,
+footer #social-media-footer a .fa-github{
+    color:white;
+    transition: 0.4s;
+}
+
+footer #social-media-footer ul{
+    display: flex;
+    list-style: none;
+    justify-content: center;
+    padding: 0;
+}
+
+footer #social-media-footer ul li{
+    font-size: 48px;
+    padding: 16px;
+    transition: 0.4s;
+}
+
+footer #social-media-footer ul li:hover a .fa-youtube{
+    color: red;
+}
+
+footer #social-media-footer ul li:hover a .fa-youtube{
+    color: #3b5998;
+}
+
+footer #social-media-footer ul li:hover a .fa-youtube{
+    color: #bbb;
+}
+
+@media(max-width:900px){
+    nav ul{
+        display: none;
+    }
+
+    #menu-icon{
+        display: flex;
+    }
+    #slideout-menu{
+        background: #2d3436;
+        z-index: 108;
+        position: fixed;
+        transition: 0.4s;
+        margin-top: 72px;
+        width: 100%;
+        text-align: center;
+    }
+    #searchbox{
+        display: none;
+    }
+}
+#slideout-menu{
+    list-style: none;
+    padding: 0 32px;
+}
+
+#slideout-menu ul li{
+    padding: 8px;
+    padding: 8px;
+    font-family: sans-serif;
+    font-size: 20px;
+    text-align: center;
+}
+
+#slideout-menu a{
+    font-family: sans-serif;
+    font-size: 20px;
+    color: white;
+}
+
+#slideout-menu input{
+    width: 85%;
+}
+
+
+section{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.section-heading {
+    font-size: 32px;
+    font-family: sans-serif;
+    border-left: 3px solid black;
+    border-right: 3px solid black;
+    transition: all 0.4s;
+    padding: 4px 32px;
+}
+
+
 
 @media(min-width:720px){
     main{
         width:95%;
-    }.card{
+    }
+    .card{
         width:45%;
     }
-    card .card-image img{
+    .card .card-image img{
         width:100%;
+    }
+}
+
+@media(min-width:1208px){
+    main{
+        width: 85%;
     }
 }
