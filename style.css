@@ -299,6 +299,48 @@ footer #social-media-footer ul li:hover a .fa-youtube{
         display: none;
     }
 }
+
+@media(max-width:719px){
+    main{
+        width:95;
+    }
+    section{
+        flex-direction: column;
+    }
+   
+    .card,
+    .card .card-image img{
+      width: 100%;
+
+}
+footer{
+    flex-direction: column;
+    text-align: center;
+}
+
+footer #left-footer{
+    flex: 1;
+    border-right: 0;
+    padding-left: 0;
+}
+footer #right-footer{
+    background: #eee;
+    color: black;
+}
+
+footer #right-footer a{
+    color: black;
+}
+
+footer #social-media-footer a .fa-facebook,
+footer #social-media-footer a .fa-youtube,
+footer #social-media-footer a .fa-github{
+    color:white;
+    transition: 0.4s;
+}
+
+}
+
 #slideout-menu{
     list-style: none;
     padding: 0 32px;
@@ -337,7 +379,23 @@ section{
     transition: all 0.4s;
     padding: 4px 32px;
 }
-
+@media(max-width:600px){
+    main{
+        width:100%;
+    }
+    h1{
+        font-size: 20px;
+    }
+    #banner h3{
+        font-size: 20px;
+    }
+    .card{
+        text-align: center;
+    }
+    #logo-img{
+        padding: 0;
+    }
+}
 
 
 @media(min-width:720px){
