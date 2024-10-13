@@ -162,6 +162,30 @@ nav ul{
 
 #slideout-menu{
     display: none;
+    background: #2d3436;
+    z-index: 100;
+    position: fixed;
+    transition: 0.4s;
+    margin-top: 72px;
+    width: 100%;
+    text-align: center;
+    opacity: 0;
+    pointer-events: none;
+}
+
+#slideout-menu ul{
+    list-style: none;
+    padding: 0 32px;
+}
+
+#slideout-menu ul li{
+    padding: 8px;
+}
+
+#slideout-menu a {
+    font-family: sans-serif;
+    font-size: 20px;
+    color: white;
 }
 
 section{
